@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyright-verifytypes-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Bryan Forbes <bryan@reigndropsfall.net>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.pyright]
+include = ["pyright_verifytypes_poetry", "tests"]
+
+pythonVersion = "3.9"
+typeCheckingMode = "strict"
+reportPrivateUsage = "none"
+reportUnusedVariable = "none"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
